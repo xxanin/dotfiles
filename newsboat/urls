@@ -5,10 +5,20 @@ https://lukesmith.xyz/index.xml
 "---YOUTUBE---" "ignore-mode"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCrqM0Ym_NbK1fqeQG2VIohg
 https://www.youtube.com/feeds/videos.xml?channel_id=UCzIbo5FwGIMFkSW1QEZmbsw
+https://www.youtube.com/feeds/videos.xml?channel_id=UCcaTUtGzOiS4cqrgtcsHYWg
+https://www.youtube.com/feeds/videos.xml?channel_id=UCmtyQOKKmrMVaKuRXz02jbQ
+https://www.youtube.com/feeds/videos.xml?channel_id=UCbPU9gFqFun1wTXcpwCdNZg
+https://www.youtube.com/feeds/videos.xml?channel_id=UCbt5BCs0aUDgNwRaUnKtXwA
 
 "---JOBS---" "ignore-mode"
-https://djinni.co/jobs/rss/?primary_keyword=React.js&primary_keyword=JavaScript&exp_level=1y&exp_level=2y&page=2
+https://djinni.co/jobs/rss/?search_type=basic-search&primary_keyword=React.js&exp_level=2y&exp_level=3y&employment=remote
+https://jobs.dou.ua/vacancies/feeds/?category=Front%20End
+exec:~/.config/newsboat/scripts/nofluff_rss.py
+exec:~/.config/newsboat/scripts/justjoin_rss.py
+exec:~/.config/newsboat/scripts/workua_rss.py
+exec:~/.config/newsboat/scripts/pracujpl_rss.py
+# https://remoteok.com/remote-react-jobs.rss
 
-"---BLOAT---" "ignore-mode"
-https://dev-drupal-test-web.pantheonsite.io/articles.xml
-https://cmus.cloudaccess.host/index.php/articles?format=feed&type=atom
+# "---BLOAT---" "ignore-mode"
+# https://dev-drupal-test-web.pantheonsite.io/articles.xml
+# https://cmus.cloudaccess.host/index.php/articles?format=feed&type=atom
