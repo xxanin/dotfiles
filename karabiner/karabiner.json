@@ -21,14 +21,14 @@
                         ]
                     },
                     {
-                        "description": "Change Fn + h/j/k/l to Arrows",
+                        "description": "Right Command + h/j/k/l to Arrows (supports extra modifiers)",
                         "manipulators": [
                             {
                                 "from": {
                                     "key_code": "h",
                                     "modifiers": {
-                                        "mandatory": ["fn"],
-                                        "optional": ["caps_lock"]
+                                        "mandatory": ["right_command"],
+                                        "optional": ["any"]
                                     }
                                 },
                                 "to": [{ "key_code": "left_arrow" }],
@@ -38,8 +38,8 @@
                                 "from": {
                                     "key_code": "j",
                                     "modifiers": {
-                                        "mandatory": ["fn"],
-                                        "optional": ["caps_lock"]
+                                        "mandatory": ["right_command"],
+                                        "optional": ["any"]
                                     }
                                 },
                                 "to": [{ "key_code": "down_arrow" }],
@@ -49,8 +49,8 @@
                                 "from": {
                                     "key_code": "k",
                                     "modifiers": {
-                                        "mandatory": ["fn"],
-                                        "optional": ["caps_lock"]
+                                        "mandatory": ["right_command"],
+                                        "optional": ["any"]
                                     }
                                 },
                                 "to": [{ "key_code": "up_arrow" }],
@@ -60,8 +60,8 @@
                                 "from": {
                                     "key_code": "l",
                                     "modifiers": {
-                                        "mandatory": ["fn"],
-                                        "optional": ["caps_lock"]
+                                        "mandatory": ["right_command"],
+                                        "optional": ["any"]
                                     }
                                 },
                                 "to": [{ "key_code": "right_arrow" }],
