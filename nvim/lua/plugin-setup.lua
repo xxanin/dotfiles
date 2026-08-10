@@ -1,7 +1,8 @@
 local gh = function(x) return 'https://github.com/' .. x end
 
 vim.pack.add({
-  gh('vague2k/vague.nvim'),
+   gh('vague2k/vague.nvim'),
+  -- gh('zenbones-theme/zenbones.nvim'),
   gh('stevearc/oil.nvim'),
   gh('tpope/vim-fugitive'),
   gh('nvim-lua/plenary.nvim'),
@@ -12,6 +13,7 @@ vim.pack.add({
   gh('Exafunction/windsurf.vim'),
   gh('chomosuke/typst-preview.nvim'),
   gh('evanleck/vim-svelte'),
+  gh('DingDean/wgsl.vim')
 }, { load = function() end })
 
 require('vague').setup({
@@ -19,6 +21,15 @@ require('vague').setup({
   italic = false,
 })
 vim.cmd('colorscheme vague')
+
+-- vim.g.zenbones_compat = 1
+-- vim.cmd('colorscheme zenbones')
+-- vim.api.nvim_set_hl(0, 'Normal', { bg = 'NONE' })
+-- vim.api.nvim_set_hl(0, 'NormalNC', { bg = 'NONE' })
+-- vim.api.nvim_set_hl(0, 'NormalFloat', { bg = 'NONE' })
+-- vim.api.nvim_set_hl(0, 'FloatBorder', { bg = 'NONE' })
+-- vim.api.nvim_set_hl(0, 'SignColumn', { bg = 'NONE' })
+-- vim.api.nvim_set_hl(0, 'EndOfBuffer', { bg = 'NONE' })
 
 require('oil').setup({
   keymaps = {
@@ -111,6 +122,14 @@ vim.api.nvim_create_autocmd('FileType', {
   once = true,
   callback = function()
     vim.cmd.packadd('vim-svelte')
+  end,
+})
+
+vim.api.nvim_create_autocmd('FileType', {
+  pattern = 'wgsl',
+  once = true,
+  callback = function()
+    vim.cmd.packadd('wgsl.vim')
   end,
 })
 
