@@ -10,6 +10,7 @@ alias yta='yt-dlp -f "bestaudio" --extract-audio --audio-format mp3 --audio-qual
 alias fs='fastfetch --logo mac2_small --structure "title:os:host:kernel:uptime:packages:shell:wm:terminal:cpu:memory"'
 alias cmus='LC_ALL=C.UTF-8 cmus'
 alias python3='python3.14'
+alias python='python3.14'
 
 alias yad='yarn app:dev'
 alias ydd='yarn dashboard:dev'
