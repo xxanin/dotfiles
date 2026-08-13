@@ -1,8 +1,7 @@
 local gh = function(x) return 'https://github.com/' .. x end
 
 vim.pack.add({
-   gh('vague2k/vague.nvim'),
-  -- gh('zenbones-theme/zenbones.nvim'),
+  gh('vague2k/vague.nvim'),
   gh('stevearc/oil.nvim'),
   gh('tpope/vim-fugitive'),
   gh('nvim-lua/plenary.nvim'),
@@ -21,15 +20,6 @@ require('vague').setup({
   italic = false,
 })
 vim.cmd('colorscheme vague')
-
--- vim.g.zenbones_compat = 1
--- vim.cmd('colorscheme zenbones')
--- vim.api.nvim_set_hl(0, 'Normal', { bg = 'NONE' })
--- vim.api.nvim_set_hl(0, 'NormalNC', { bg = 'NONE' })
--- vim.api.nvim_set_hl(0, 'NormalFloat', { bg = 'NONE' })
--- vim.api.nvim_set_hl(0, 'FloatBorder', { bg = 'NONE' })
--- vim.api.nvim_set_hl(0, 'SignColumn', { bg = 'NONE' })
--- vim.api.nvim_set_hl(0, 'EndOfBuffer', { bg = 'NONE' })
 
 require('oil').setup({
   keymaps = {
