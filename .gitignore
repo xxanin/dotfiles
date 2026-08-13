@@ -15,6 +15,7 @@ nvim/.luarc.json
 nvim/lazy-lock.json
 nvim/lazyvim.json
 nvim/lsp
+nvim/nvim-pack-lock.json
 
 tmux/swap-pane
 tmux/plugins
