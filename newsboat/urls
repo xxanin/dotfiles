@@ -11,8 +11,10 @@ https://www.youtube.com/feeds/videos.xml?channel_id=UCbPU9gFqFun1wTXcpwCdNZg
 https://www.youtube.com/feeds/videos.xml?channel_id=UCbt5BCs0aUDgNwRaUnKtXwA
 
 "---JOBS---" "ignore-mode"
-https://djinni.co/jobs/rss/?search_type=basic-search&primary_keyword=React.js&exp_level=2y&exp_level=3y&employment=remote
+https://djinni.co/jobs/rss/?search_type=basic-search&primary_keyword=React.js&exp_level=2y&exp_level=3y&exp_level=4y&employment=remote
+https://djinni.co/jobs/rss/?search_type=basic-search&primary_keyword=Node.js&primary_keyword=Fullstack&primary_keyword=React.js&exp_level=2y&exp_level=3y&exp_level=4y&employment=remote
 https://jobs.dou.ua/vacancies/feeds/?category=Front%20End
+https://jobs.dou.ua/vacancies/feeds/?category=Node.js
 exec:~/.config/newsboat/scripts/nofluff_rss.py
 exec:~/.config/newsboat/scripts/justjoin_rss.py
 exec:~/.config/newsboat/scripts/workua_rss.py
