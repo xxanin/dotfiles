@@ -18,6 +18,7 @@ export HISTFILE="$XDG_STATE_HOME/zsh/history"
 export ZSH_COMPDUMP="$XDG_CACHE_HOME/zsh/zcompdump-$ZSH_VERSION"
 
 # xdg declutter
+export CLAUDE_CONFIG_DIR="$XDG_CONFIG_HOME/claude"
 export NPM_CONFIG_USERCONFIG="$XDG_CONFIG_HOME/npm/npmrc"
 export NPM_CONFIG_CACHE="$XDG_CACHE_HOME/npm"
 export NPM_CONFIG_PREFIX="$XDG_DATA_HOME/npm"
@@ -50,16 +51,18 @@ export RIPGREP_CONFIG_PATH="$XDG_CONFIG_HOME/ripgrep/ripgreprc"
 export TERMINFO="$XDG_DATA_HOME/terminfo"
 export TERMINFO_DIRS="$XDG_DATA_HOME/terminfo:/usr/share/terminfo"
 export VIMINFO="$XDG_STATE_HOME/vim/viminfo"
+export DOTNET_CLI_HOME="$XDG_DATA_HOME/dotnet"
 # export YARN_RC_FILENAME=".yarnrc"
 
 # path
-export PATH="$HOME/.dotnet/tools:$PATH"
+export PATH="/opt/homebrew/bin:$PATH"
+export PATH="$DOTNET_CLI_HOME/tools:$PATH"
 export PATH="$CARGO_HOME/bin:$PATH"
-export PATH="$XDG_CACHE_HOME/go/bin:$PATH"
+export PATH="$XDG_DATA_HOME/go/bin:$PATH"
 export PATH="$HOME/scripts:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/.local/share/npm/bin:$PATH"
-export PATH="/opt/homebrew/opt/node@24/bin:$PATH"
+export PATH="/opt/homebrew/opt/postgresql@18/bin:$PATH"
 # export PATH="$HOME/tmp/cmus/usr/local/bin:$PATH"
 
 if [ -x /opt/homebrew/bin/brew ]; then
