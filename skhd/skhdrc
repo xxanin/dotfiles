@@ -1,48 +1,50 @@
-ctrl - 1 : yabai -m space --focus 1
-ctrl - 2 : yabai -m space --focus 2
-ctrl - 3 : yabai -m space --focus 3
-ctrl - 4 : yabai -m space --focus 4
-ctrl - 5 : yabai -m space --focus 5
-ctrl - 6 : yabai -m space --focus 6
-ctrl - 7 : yabai -m space --focus 7
-ctrl - 8 : yabai -m space --focus 8
-ctrl - 9 : yabai -m space --focus 9
+# ctrl - 1 : yabai -m space --focus 1
+# ctrl - 2 : yabai -m space --focus 2
+# ctrl - 3 : yabai -m space --focus 3
+# ctrl - 4 : yabai -m space --focus 4
+# ctrl - 5 : yabai -m space --focus 5
+# ctrl - 6 : yabai -m space --focus 6
+# ctrl - 7 : yabai -m space --focus 7
+# ctrl - 8 : yabai -m space --focus 8
+# ctrl - 9 : yabai -m space --focus 9
+# 
+# ctrl + alt - 1 : yabai -m window --space 1; yabai -m space --focus 1
+# ctrl + alt - 2 : yabai -m window --space 2; yabai -m space --focus 2
+# ctrl + alt - 3 : yabai -m window --space 3; yabai -m space --focus 3
+# ctrl + alt - 4 : yabai -m window --space 4; yabai -m space --focus 4
+# ctrl + alt - 5 : yabai -m window --space 5; yabai -m space --focus 5
+# ctrl + alt - 6 : yabai -m window --space 6; yabai -m space --focus 6
+# ctrl + alt - 7 : yabai -m window --space 7; yabai -m space --focus 7
+# ctrl + alt - 8 : yabai -m window --space 8; yabai -m space --focus 8
+# ctrl + alt - 9 : yabai -m window --space 9; yabai -m space --focus 9
+# 
+# shift + ctrl - h : yabai -m window --focus west
+# shift + ctrl - j : yabai -m window --focus south
+# shift + ctrl - k : yabai -m window --focus north
+# shift + ctrl - l : yabai -m window --focus east
+# 
+# shift + ctrl + alt - h : yabai -m window --swap west
+# shift + ctrl + alt - j : yabai -m window --swap south
+# shift + ctrl + alt - k : yabai -m window --swap north
+# shift + ctrl + alt - l : yabai -m window --swap east
 
-ctrl + alt - 1 : yabai -m window --space 1; yabai -m space --focus 1
-ctrl + alt - 2 : yabai -m window --space 2; yabai -m space --focus 2
-ctrl + alt - 3 : yabai -m window --space 3; yabai -m space --focus 3
-ctrl + alt - 4 : yabai -m window --space 4; yabai -m space --focus 4
-ctrl + alt - 5 : yabai -m window --space 5; yabai -m space --focus 5
-ctrl + alt - 6 : yabai -m window --space 6; yabai -m space --focus 6
-ctrl + alt - 7 : yabai -m window --space 7; yabai -m space --focus 7
-ctrl + alt - 8 : yabai -m window --space 8; yabai -m space --focus 8
-ctrl + alt - 9 : yabai -m window --space 9; yabai -m space --focus 9
+# shift + alt - return : yabai -m window --toggle zoom-fullscreen
 
-ctrl - h : yabai -m window --focus west
-ctrl - j : yabai -m window --focus south
-ctrl - k : yabai -m window --focus north
-ctrl - l : yabai -m window --focus east
+# alt - f : yabai -m window --toggle float
 
-ctrl + alt - h : yabai -m window --swap west
-ctrl + alt - j : yabai -m window --swap south
-ctrl + alt - k : yabai -m window --swap north
-ctrl + alt - l : yabai -m window --swap east
-
-# alt - return        : yabai -m window --toggle split
-alt + shift - return : yabai -m window --toggle zoom-fullscreen
-
-alt - f : yabai -m window --toggle float
-
-# floating experiment
-# ctrl + alt - return : yabai -m window --grid 1:1:0:0:1:1
-# ctrl + alt - h : yabai -m window --grid 2:2:0:0:1:2
-# ctrl + alt - l : yabai -m window --grid 2:2:1:0:1:2
-# ctrl + alt - j : yabai -m window --grid 2:2:0:1:2:1
-# ctrl + alt - k : yabai -m window --grid 2:2:0:0:2:1
-
-ctrl + cmd - f : ~/.config/yabai/fullscreen-swap.sh
-ctrl + alt - f : ~/.config/yabai/toggle-ui-space.sh
+# ctrl + cmd - f : ~/.config/yabai/fullscreen-swap.sh
+# ctrl + alt - f : ~/.config/yabai/toggle-ui-space.sh
 ctrl + alt - w : ~/.scripts/random-wallpaper.sh
 
-alt - return : /Applications/kitty.app/Contents/MacOS/kitty --single-instance -d ~
-alt - p : ~/.config/skhd/launch-librewolf.sh
+# alt - return : /Applications/kitty.app/Contents/MacOS/kitty --single-instance -d ~
+alt - return : /Applications/Ghostty.app/Contents/MacOS/ghostty
+
+alt - w : ~/.config/skhd/launch-librewolf.sh
+shift + alt - w : select-movie-menu
+
+alt - b : ~/.local/bin/bookmarks-menu --use open
+ctrl + alt - b : ~/.local/bin/bookmarks-menu --use paste
+ctrl - b : ~/.local/bin/bookmarks-menu --add
+# alt - k     : ~/scripts/dmenukaomoji 
+alt - d : mdmenu_run
+# alt - f : ~/scripts/run-float ~/scripts/fzf-files
