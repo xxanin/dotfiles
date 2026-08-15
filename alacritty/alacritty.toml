@@ -12,10 +12,14 @@ bold_italic = { family = "IosevkaTerm NFM SemiBold", style = "SemiBold" }
 style = { shape = "Block", blinking = "Never" }
 
 [window]
+opacity = 0.9
+blur = false
 option_as_alt = "Both"
-decorations = "Buttonless"
-startup_mode = "Maximized"
+# decorations = "Buttonless"
+decorations = "None"
 dynamic_padding = true
+dimensions = { columns = 160, lines = 36 }
+position = { x = 340, y = 500 }
 padding = { x = 10, y = 0 }
 
 [env]
