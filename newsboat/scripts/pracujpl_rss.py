@@ -18,7 +18,7 @@ PL_MONTHS = {
     'września': 'Sep', 'października': 'Oct', 'listopada': 'Nov', 'grudnia': 'Dec'
 }
 
-PAGE_URL = "https://it.pracuj.pl/praca/react;kw/praca%20zdalna;wm,home-office?et=4&sc=0&its=frontend"
+PAGE_URL = "https://it.pracuj.pl/praca/react;kw/praca%20zdalna;wm,home-office?et=4&sc=0&its=frontend%2Cfullstack"
 
 req = urllib.request.Request(
     PAGE_URL, 

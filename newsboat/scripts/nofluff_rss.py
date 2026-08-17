@@ -6,7 +6,7 @@ import re
 
 url = "https://nofluffjobs.com/rss"
 
-keywords = re.compile(r"(react|next\.js|nextjs|front-?end|frontend|fullstack)", re.I)
+keywords = re.compile(r"(react|next\.js|nextjs|front-?end|frontend|fullstack|full-?stack)", re.I)
 location_re = re.compile(r"<b>Location:</b>\s*([^<]+)", re.I)
 
 feed = feedparser.parse(url)
