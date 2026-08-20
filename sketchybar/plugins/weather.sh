@@ -1,4 +1,4 @@
-#!/opt/homebrew/bin/bash
+#!/bin/zsh
 
 declare -A WEATHER_ICONS=(
   ["clear"]="􀆬"
